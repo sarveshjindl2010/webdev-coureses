@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>
+            project for handlong error in JS
+        </title>
+    </head>
+    <body>
+        <h2>Javascript Handling and arrow function</h2>
+        <p>This is a example to demonstrate how to use a <b>catch</b> to display an error</p>
+        <p id="result"></p>
+        <script>
+            sub = (a,b) => a - b;
+            try {
+                document.getElementById("result").innerHTML = sub(43);
+            }
+
+            catch(err) {
+                document.getElementById("result").innerHTML = err.message;
+            }
+        </script>
+    </body>
+</html>
