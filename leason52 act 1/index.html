@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>
+            convert,Search and Replace string
+        </title>
+    </head>
+    <body>
+        <h2>Javascript String Methods</h2>
+        <p>Search a string for "Nissan GTR", display the position of the match and replace the word "my favourite" with "my favourite car" and display</p>
+        <p id="search_result"></p>
+        <p id="replace_result"></p>
+        <p id="string_result"></p>
+        <script>
+            var str = "bro my favourite is Nissan GTR";
+            var search_position = str.search("Nissan GTR");
+            var txt = str.replace("my favourite", "my favourite car")
+            var x = 20;
+            var y = 10;
+            document.getElementById("search_result").innerHTML = search_position;
+            document.getElementById("replace_result").innerHTML = txt;
+            document.getElementById("search_result").innerHTML = String(x)+ String(y);
+        </script>
+    </body>
+</html>
