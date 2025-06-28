@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>
+            Async/ await in JS
+        </title>
+    </head>
+    <body>
+        <h2>Javascript Async/ await</h2>
+        <p id="result"></p>
+        <script>
+            async function sub(a,b) {
+                let response = await a - b;
+                display(response);
+            }
+         function display(some) {
+            document.getElementById("result").innerHTML = some;
+         }
+         sub(20, 12)
+        </script>
+    </body>
+</html>
