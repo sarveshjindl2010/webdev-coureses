@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>
+            ASYNCHRONOUS FUNCTIONN IN JS
+        </title>
+    </head>
+    <body>
+        <h2>Javascript async / await</h2>
+        <h1 id="result"></h1>
+        <script>
+            async function product(a,b) {
+                let response = await b * a;
+                display(response);
+            }
+            function display(some) {
+                document.getElementById("result").innerHTML = some;
+            }
+            product(10,7);
+        </script>
+    </body>
+</html>
