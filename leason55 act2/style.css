@@ -1,0 +1,35 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: black;
+    font-family:"Baloo Tamma 2", cursive;
+}
+
+.m-heading {
+    font-family: "Robot Slab", serif;
+}
+
+.text-white {
+    color: white;
+}
+
+.main-container {
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('1.webp');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.main_row h1 {
+    font-size: 5rem;
+}
+
+.main_row img {
+    width: autp;
+    height: 100vh'
+}
