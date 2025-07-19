@@ -2,14 +2,34 @@
 
 <head>
     <title>
-        Structure of Calculator
+        decorate the calculator
     </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    
+    <link rel="stylesheet" href="style.css" />
+    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Roboto+Slab:wght@200;400;600;900&display=swap"
+        rel="stylesheet" />
+        
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>   
+<body>  
+    <center>
+        <h1><mark>calculator</mark></h1>
+    </center>
     <div id="container">
         <div id="calculator">
+            <div id="result">
+                <div id="history">
+                    <p id="history-value"></p>
+                </div>
+                <div id="output">
+                    <p id="output-value"></p>
+                </div>
+            </div>
+            <div id="keyboard">
             <button class="operator" id="clear">C</button>
             <button class="operator" id="backspace">CE</button>
             <button class="operator" id="%">%</button>
@@ -31,6 +51,7 @@
             <button class="operator" id="empty"></button>
             <button class="operator" id="empty"></button>
         </div>
+    </div>
     </div>
 </body>
 
