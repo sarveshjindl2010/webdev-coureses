@@ -51,14 +51,16 @@ if __name__ == '__main__':
             print("Please enter a valid option.")
             continue
         if user_choice == '1':
-            books.displayBooks{}  
+            books.displayBooks()
         elif user_choice == '2':
-            book = input("Enter the same name of the book you wanr to lend:")
+            book = input("Enter the name of the book you wanr to lend:")
             books.lendBook(user_name, book)
         elif user_choice == '3':
             book = input("Enter the name of book you want to add:")
             books.addBook(book)
         elif user_choice == '4':
             book = input("Enter the name of book you want to return:")
-            books.retturnBook(book)
+            books.returnBook(book)
         elif user_choice == '5':
+            print(f"Thanks for using the library, {user_name}. Have a great day!")
+            break
