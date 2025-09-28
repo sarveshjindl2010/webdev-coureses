@@ -1,1 +1,1 @@
-hi i am john
+File in write mode: ....HI I AM SARVESH File in append mode: ....HI I AM SARVESH 

@@ -1,0 +1,1 @@
+File in write mode: ...Hi i am batmanFile in append mode: ......Yo i am joked
