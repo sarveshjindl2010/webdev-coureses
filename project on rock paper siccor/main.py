@@ -23,11 +23,11 @@ root.title("Rock Paper Scissors")
 
 frame = tk.Frame(root, padx=20, pady=20)
 frame.pack()
-
+frame.place(x=50, y=60)
 title_label = tk.Label(frame, text="Rock Paper Scissors", font=("Arial", 16))
 title_label.pack()
-
+title_label.place(x=80, y=10)
 result_label = tk.Label(frame, text="", font=("Arial", 12))
 result_label.pack()
-
+result_label.place(x=70, y=200)
 root.mainloop()
