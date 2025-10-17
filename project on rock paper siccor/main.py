@@ -6,18 +6,16 @@ choices = ["Rock", "Paper", "Scissors"]
 def determine_winner(user, computer):
     if user == computer:
         return "It's a tie!"
-    elif (user == "Rock" and computer == "Scissors") or \
-         (user == "Paper" and computer == "Rock") or \
-         (user == "Scissors" and computer == "Paper"):
+    elif (user == "Rock" and computer == "Scissors") or (user == "Paper" and computer == "Rock") or (user == "Scissors" and computer == "Paper"):
         return "You win!"
     else:
         return "Computer wins!"
 
 def play(user_choice):
+    user_choice = Entry(fg="yellow", bg="grey", width=50)
+    user_choice.pack()
     computer_choice = random.choice(choices)
     result = determine_winner(user_choice, computer_choice)
-    result_label.config(text=f"Your choice: {user_choice}\nComputer's choice: {computer_choice}\n{result}") # type: ignore
-
 root = tk.Tk()
 root.title("Rock Paper Scissors")
 
