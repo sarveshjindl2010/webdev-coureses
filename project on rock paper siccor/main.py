@@ -12,7 +12,7 @@ def determine_winner(user, computer):
         return "Computer wins!"
 
 def play(user_choice):
-    user_choice = Entry(fg="yellow", bg="grey", width=50)
+    user_choice = tk.Entry(fg="yellow", bg="grey", width=50)
     user_choice.pack()
     computer_choice = random.choice(choices)
     result = determine_winner(user_choice, computer_choice)
