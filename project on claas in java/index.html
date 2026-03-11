@@ -1,26 +1,29 @@
-<html>
-    <body>
-        <h2>JavaScript Class Inheritance</h2>
-        
-        <p id="details"></p>
-        <p id="greetings"></p>
-        <script>
-            class Grade extends Student {
-                    constructor(name, grade) {
-                        super(name);
-                        this.studentGrade = grade;
-                    }
+<h2>JavaScript Class Static Methods</h2>
+<p>A static method is created with the "static" keyword, and you can only call the method on the class itself.</p>
+<p id="hello"></p>
+<p id="hi"></p>
+<p id="welcome"></p>
+<script>
+    class Student {
+        constructor(name) {
+            this.studentName = name;
+        }
+        static hello() { // static method
+            return "Hello!!";
+        }
+        static welcome(x) {
+            return "Welcome " + x.studentName;
+        }
+        hi() {
+            return "Hi " + this.studentName;
+        }
+    }
 
-                    show() {
-                        return this.present() + ', ' + from + ': ' + this.studentGrade;
-                    }
-                    
-                }   
-                let myStudent = new Grade("Tina", "grade 6");
-                    document.getElementById("details").innerHTML =
-                        myStudent.show();
-                        // hello() is a static method cannot be accessed by object
-                        document.getElementById("greetings").innerHTML = Student.hello();
-        </script>
-    </body>
-</html>
+    myname = new Student("Carol");
+    //Call 'hello()' on the class Student and NOT on the 'myname' object because 'hello()' is a static method it cannot access object
+    document.getElementById("hello").innerHTML = Student.hello();
+    // Call 'hi()' on the 'myname' object:
+    document.getElementById("hi").innerHTML = myname.hi();
+    // Call 'welcome()' can access the object since parameter is passed
+    document.getElementById("welcome").innerHTML = Student.welcome(myname);
+</script>
